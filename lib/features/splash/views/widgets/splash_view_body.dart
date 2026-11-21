@@ -1,9 +1,25 @@
 import 'package:flutter/widgets.dart';
+import 'package:juice_hub/core/utils/functions/on_generate_route.dart';
 import 'package:juice_hub/core/utils/img_names.dart';
 import 'package:svg_flutter/svg.dart';
 
-class SplashViewBody extends StatelessWidget {
+class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
+
+  @override
+  State<SplashViewBody> createState() => _SplashViewBodyState();
+}
+
+class _SplashViewBodyState extends State<SplashViewBody> {
+  @override
+  void initState() {
+    super.initState();
+
+    Future.delayed(Duration(seconds: 3), () {
+      if (!mounted) return;
+      Navigator.pushReplacementNamed(context, Routes.kOnBoardingView);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {

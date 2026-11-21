@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_single_quotes
 class ImgNames {
   ImgNames._();
-  
+
   /// Assets for imagesCircles
   /// assets/images/Circles.svg
   static const String imagesCircles = "assets/images/Circles.svg";
@@ -11,11 +11,10 @@ class ImgNames {
   static const String imagesIcon = "assets/images/icon.png";
 
   /// Assets for imagesJuiceHub
-  /// assets/images/juice-hub.png
-  static const String imagesJuiceHub = "assets/images/juice-hub.png";
+  /// assets/images/juice_hub.png
+  static const String imagesJuiceHub = "assets/images/juice_hub.png";
 
   /// Assets for imagesPlant
   /// assets/images/Plant.svg
   static const String imagesPlant = "assets/images/Plant.svg";
 }
-
