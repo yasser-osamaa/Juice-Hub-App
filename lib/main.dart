@@ -1,4 +1,4 @@
-import 'package:juice_hub/features/splash/views/splash_view.dart';
+import 'package:juice_hub/core/utils/functions/on_generate_route.dart';
 import 'package:material_ui/material_ui.dart';
 
 void main() {
@@ -13,8 +13,8 @@ class JucieHubApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Jucie Hub',
-      home: const SplashView(),
-      //onGenerateRoute: ,
+      onGenerateRoute: Routes.generateRoute,
+      initialRoute: Routes.kSplashView,
     );
   }
 }
